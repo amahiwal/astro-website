@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astro Varenyam — Where Destiny Meets Divine Precision</title>
+  <meta name="description" content="Astro Varenyam is a premium Vedic astrology consultancy founded by Subhash Sharma. Clarity, alignment, and transformation through cosmic intelligence." />
+  <meta name="keywords" content="Vedic astrology, Jyotish, Subhash Sharma, astrology consultation, spiritual guidance, Astro Varenyam" />
+  <meta property="og:title" content="Astro Varenyam — Where Destiny Meets Divine Precision" />
+  <meta property="og:description" content="Premium life-guidance through Vedic astrology. Not prediction—alignment." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://astro-website.vercel.app/index.html" />
+</head>
+<body class="lang-en">
+
+
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html#hero" class="nav-logo">
+        <img src="assets/logo.svg" alt="Astro Varenyam Logo" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#services"><span class="en">Services</span><span class="hi">सेवाएँ</span></a></li>
+        <li><a href="index.html#founder"><span class="en">About</span><span class="hi">परिचय</span></a></li>
+        <li><a href="index.html#process"><span class="en">Process</span><span class="hi">प्रक्रिया</span></a></li>
+        <li><a href="index.html#testimonials"><span class="en">Testimonials</span><span class="hi">प्रशंसापत्र</span></a></li>
+        <li><a href="contact.html" class="nav-cta"><span class="en">Book a Session</span><span class="hi">सत्र बुक करें</span></a></li>
+        <li>
+          <button id="langToggle" class="lang-btn">
+            <span class="en">हिन्दी</span><span class="hi">EN</span>
+          </button>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#services" class="mobile-link"><span class="en">Services</span><span class="hi">सेवाएँ</span></a>
+      <a href="index.html#founder" class="mobile-link"><span class="en">About</span><span class="hi">परिचय</span></a>
+      <a href="index.html#process" class="mobile-link"><span class="en">Process</span><span class="hi">प्रक्रिया</span></a>
+      <a href="index.html#testimonials" class="mobile-link"><span class="en">Testimonials</span><span class="hi">प्रशंसापत्र</span></a>
+      <a href="contact.html" class="mobile-link mobile-cta"><span class="en">Book a Session</span><span class="hi">सत्र बुक करें</span></a>
+      <button id="langToggleMobile" class="lang-btn-mobile">
+        <span class="en">हिन्दी में देखें</span><span class="hi">View in English</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-planets">
+      <!-- Saturn-like -->
+      <svg class="anim-planet p1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="25" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <ellipse cx="50" cy="50" rx="45" ry="12" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(-20 50 50)"/>
+      </svg>
+      <!-- Small Moon -->
+      <svg class="anim-planet p2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="40" cy="40" r="6" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="65" cy="55" r="4" fill="none" stroke="currentColor" stroke-width="1"/>
+      </svg>
+      <!-- Orbiting Star -->
+      <svg class="anim-planet p3" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2 4"/>
+      </svg>
+    </div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">
+        <span class="en">Vedic Astrology Authority · Est. 2012</span>
+        <span class="hi">वैदिक ज्योतिष प्राधिकरण · 2012 में स्थापित</span>
+      </p>
+      <h1 class="hero-headline" id="typewriter-headline">
+        <!-- Animated text will appear here -->
+        <span class="typewriter-cursor">|</span>
+      </h1>
+      <p class="hero-sub">
+        <span class="en">For individuals who demand clarity, precision, and transformation — not horoscopes.</span>
+        <span class="hi">उन व्यक्तियों के लिए जो स्पष्टता, सटीकता और परिवर्तन की मांग करते हैं - राशिफल की नहीं।</span>
+      </p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn-primary" id="hero-cta">
+          <span class="en">Begin Your Alignment</span><span class="hi">अपना संरेखण शुरू करें</span>
+        </a>
+        <a href="#founder" class="btn-ghost">
+          <span class="en">Meet the Founder</span><span class="hi">संस्थापक से मिलें</span>
+        </a>
+      </div>
+  </section>
+
+  <!-- AUTHORITY STRIP -->
+  <section class="authority" id="authority">
+    <div class="container">
+      <div class="authority-grid">
+        <div class="auth-item reveal">
+          <span class="auth-num">14+</span>
+          <span class="auth-label">
+            <span class="en">Years of Mastery</span>
+            <span class="hi">महारत के वर्ष</span>
+          </span>
+        </div>
+        <div class="auth-divider"></div>
+        <div class="auth-item reveal">
+          <span class="auth-num">12+</span>
+          <span class="auth-label">
+            <span class="en">Years Under Brand</span>
+            <span class="hi">वर्षों से ब्रांड के तहत</span>
+          </span>
+        </div>
+        <div class="auth-divider"></div>
+        <div class="auth-item reveal">
+          <span class="auth-num">5000+</span>
+          <span class="auth-label">
+            <span class="en">Lives Guided</span>
+            <span class="hi">मार्गदर्शनित जीवन</span>
+          </span>
+        </div>
+        <div class="auth-divider"></div>
+        <div class="auth-item reveal">
+          <span class="auth-num">4</span>
+          <span class="auth-label">
+            <span class="en">Elite Recognitions</span>
+            <span class="hi">विशिष्ट मान्यताएँ</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">
+          <span class="en">What We Offer</span><span class="hi">हमारी सेवाएँ</span>
+        </p>
+        <h2 class="section-title">
+          <span class="en">Precision Guidance.<br />Profound Results.</span>
+          <span class="hi">सटीक मार्गदर्शन।<br />गहन परिणाम।</span>
+        </h2>
+        <p class="section-desc">
+          <span class="en">Each engagement is a strategic alignment of your life with cosmic intelligence — not a generic reading.</span>
+          <span class="hi">प्रत्येक जुड़ाव ब्रह्मांडीय बुद्धिमत्ता के साथ आपके जीवन का एक रणनीतिक संरेखण है - एक सामान्य पाठन नहीं।</span>
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" id="service-career">
+          <div class="service-icon">◈</div>
+          <h3>
+            <span class="en">Career &amp; Purpose Alignment</span><span class="hi">करियर और उद्देश्य संरेखण</span>
+          </h3>
+          <p>
+            <span class="en">Decode your dharmic path. Understand the right timing for decisions, transitions, and peak performance windows.</span>
+            <span class="hi">अपने धार्मिक मार्ग को डिकोड करें। निर्णयों, बदलावों और चरम प्रदर्शन के सही समय को समझें।</span>
+          </p>
+          <a href="#contact" class="service-link"><span class="en">Enquire →</span><span class="hi">पूछताछ करें →</span></a>
+        </div>
+        <div class="service-card reveal" id="service-relationship">
+          <div class="service-icon">◈</div>
+          <h3>
+            <span class="en">Relationship Clarity Sessions</span><span class="hi">संबंध स्पष्टता सत्र</span>
+          </h3>
+          <p>
+            <span class="en">Navigate partnerships, compatibility, and karmic bonds with ancient precision and modern clarity.</span>
+            <span class="hi">प्राचीन सटीकता और आधुनिक स्पष्टता के साथ साझेदारी, अनुकूलता और कर्म बंधनों को नेविगेट करें।</span>
+          </p>
+          <a href="#contact" class="service-link"><span class="en">Enquire →</span><span class="hi">पूछताछ करें →</span></a>
+        </div>
+        <div class="service-card reveal" id="service-financial">
+          <div class="service-icon">◈</div>
+          <h3>
+            <span class="en">Financial Timing Insights</span><span class="hi">वित्तीय समय की अंतर्दृष्टि</span>
+          </h3>
+          <p>
+            <span class="en">Identify auspicious periods for investments, business launches, and wealth-building with planetary precision.</span>
+            <span class="hi">ग्रहों की सटीकता के साथ निवेश, व्यवसाय लॉन्च और धन निर्माण के लिए शुभ अवधियों की पहचान करें।</span>
+          </p>
+          <a href="#contact" class="service-link"><span class="en">Enquire →</span><span class="hi">पूछताछ करें →</span></a>
+        </div>
+        <div class="service-card reveal" id="service-karmic">
+          <div class="service-icon">◈</div>
+          <h3>
+            <span class="en">Karmic Correction Rituals</span><span class="hi">कर्म सुधार अनुष्ठान</span>
+          </h3>
+          <p>
+            <span class="en">Deep Vedic anushthan and remedies, tailored to your chart, to dissolve obstacles and restore cosmic harmony.</span>
+            <span class="hi">आपके चार्ट के अनुरूप गहरे वैदिक अनुष्ठान और उपाय, बाधाओं को दूर करने और ब्रह्मांडीय सद्भाव बहाल करने के लिए।</span>
+          </p>
+          <a href="#contact" class="service-link"><span class="en">Enquire →</span><span class="hi">पूछताछ करें →</span></a>
+        </div>
+        <div class="service-card reveal" id="service-health">
+          <div class="service-icon">◈</div>
+          <h3>
+            <span class="en">Health &amp; Vitality Guidance</span><span class="hi">स्वास्थ्य और जीवन शक्ति मार्गदर्शन</span>
+          </h3>
+          <p>
+            <span class="en">Understand planetary influences on your physical and mental wellbeing, and the remedies to restore balance.</span>
+            <span class="hi">आपके शारीरिक और मानसिक कल्याण पर ग्रहों के प्रभावों को समझें, और संतुलन बहाल करने के उपाय।</span>
+          </p>
+          <a href="#contact" class="service-link"><span class="en">Enquire →</span><span class="hi">पूछताछ करें →</span></a>
+        </div>
+        <div class="service-card reveal" id="service-muhurta">
+          <div class="service-icon">◈</div>
+          <h3>
+            <span class="en">Muhurta &amp; Auspicious Timing</span><span class="hi">मुहूर्त और शुभ समय</span>
+          </h3>
+          <p>
+            <span class="en">From weddings to business launches — select the precise cosmic moment to begin what matters most.</span>
+            <span class="hi">शादियों से लेकर व्यवसाय लॉन्च तक - जो सबसे ज्यादा मायने रखता है उसे शुरू करने के लिए सटीक ब्रह्मांडीय क्षण का चयन करें।</span>
+          </p>
+          <a href="#contact" class="service-link"><span class="en">Enquire →</span><span class="hi">पूछताछ करें →</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDER -->
+  <section class="founder" id="founder">
+    <div class="container founder-inner">
+      <div class="founder-image-wrap reveal">
+        <div class="founder-img-border"></div>
+        <img src="assets/hero.png" alt="Subhash Sharma — Founder, Astro Varenyam" class="founder-img" />
+        <div class="founder-badge reveal">
+          <span>Jyotish</span>
+          <span class="badge-title">Samrat</span>
+        </div>
+      </div>
+      <div class="founder-content reveal">
+        <p class="section-eyebrow">
+          <span class="en">The Visionary</span><span class="hi">दूरदर्शी</span>
+        </p>
+        <h2 class="section-title">
+          <span class="en">Subhash Sharma</span><span class="hi">सुभाष शर्मा</span>
+        </h2>
+        <p class="founder-role">
+          <span class="en">Founder &amp; Principal Astrologer · Astro Varenyam</span>
+          <span class="hi">संस्थापक और प्रधान ज्योतिषी · एस्ट्रो वरेण्यम</span>
+        </p>
+        <p class="founder-bio">
+          <span class="en">What began as a deep personal curiosity in the ancient language of the cosmos became, over fourteen years, a life's calling. Subhash Sharma did not merely study Jyotish — he lived it, refined it, and transformed it into a system of guidance that has profoundly changed thousands of lives.</span>
+          <span class="hi">ब्रह्मांड की प्राचीन भाषा में एक गहरी व्यक्तिगत जिज्ञासा के रूप में जो शुरू हुआ, वह चौदह वर्षों में जीवन का लक्ष्य बन गया। सुभाष शर्मा ने न केवल ज्योतिष का अध्ययन किया - उन्होंने इसे जिया, इसे परिष्कृत किया और इसे मार्गदर्शन की एक प्रणाली में बदल दिया जिसने हजारों लोगों के जीवन को गहराई से बदल दिया है।</span>
+        </p>
+        <p class="founder-bio">
+          <span class="en">A graduate of Maharshi College of Astrology (Jyotish Shastri), initiated through Shri Vidya Diksha, and honoured with rare titles that few practitioners ever attain — his mastery is not claimed. It is verified, recognized, and proven through the transformations of every individual he has guided.</span>
+          <span class="hi">महर्षि ज्योतिष महाविद्यालय (ज्योतिष शास्त्री) के स्नातक, श्री विद्या दीक्षा के माध्यम से दीक्षित, और दुर्लभ उपाधियों से सम्मानित जिन्हें बहुत कम लोग प्राप्त कर पाते हैं - उनकी महारत का दावा नहीं किया जाता है। इसे उनके द्वारा निर्देशित प्रत्येक व्यक्ति के परिवर्तनों के माध्यम से सत्यापित, पहचाना और सिद्ध किया गया है।</span>
+        </p>
+        <div class="founder-credentials">
+          <div class="credential-tag">Jyotish Shiromani</div>
+          <div class="credential-tag">Jyotish Ratna</div>
+          <div class="credential-tag">Jyotish Samrat</div>
+          <div class="credential-tag">Mrigashira Nakshatra Samman</div>
+        </div>
+        <p class="founder-location">
+          <span class="en">Bilaspur, Chhattisgarh, India</span>
+          <span class="hi">बिलासपुर, छत्तीसगढ़, भारत</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIATION / 4 PILLARS -->
+  <section class="pillars" id="pillars">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">
+          <span class="en">Why Astro Varenyam</span><span class="hi">एस्ट्रो वरेण्यम क्यों</span>
+        </p>
+        <h2 class="section-title">
+          <span class="en">For Those Who Value<br /><em>Quality Over Noise</em></span>
+          <span class="hi">उन लोगों के लिए जो<br /><em>शोर से अधिक गुणवत्ता को महत्व देते हैं</em></span>
+        </h2>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar reveal" id="pillar-1">
+          <span class="pillar-num">01</span>
+          <h3>
+            <span class="en">Not Fear-Based</span><span class="hi">भय पर आधारित नहीं</span>
+          </h3>
+          <p>
+            <span class="en">We do not trade in anxiety. Every insight is delivered as an opportunity for alignment, empowerment, and decisive action.</span>
+            <span class="hi">हम चिंता का व्यापार नहीं करते हैं। हर अंतर्दृष्टि को संरेखण, सशक्तिकरण और निर्णायक कार्रवाई के अवसर के रूप में दिया जाता है।</span>
+          </p>
+        </div>
+        <div class="pillar reveal" id="pillar-2">
+          <span class="pillar-num">02</span>
+          <h3>
+            <span class="en">Practical &amp; Actionable</span><span class="hi">व्यावहारिक और कार्रवाई योग्य</span>
+          </h3>
+          <p>
+            <span class="en">Ancient wisdom translated into clear, modern guidance. You leave every session with a specific, executable plan.</span>
+            <span class="hi">स्पष्ट, आधुनिक मार्गदर्शन में अनुवादित प्राचीन ज्ञान। आप प्रत्येक सत्र को एक विशिष्ट, निष्पादन योग्य योजना के साथ छोड़ देते हैं।</span>
+          </p>
+        </div>
+        <div class="pillar reveal" id="pillar-3">
+          <span class="pillar-num">03</span>
+          <h3>
+            <span class="en">Deeply Personalized</span><span class="hi">गहराई से व्यक्तिगत</span>
+          </h3>
+          <p>
+            <span class="en">No templates. No generic readings. Your chart is unique — and so is every insight, remedy, and recommendation you receive.</span>
+            <span class="hi">कोई टेम्पलेट नहीं। कोई सामान्य पाठन नहीं। आपका चार्ट अद्वितीय है - और इसी तरह हर अंतर्दृष्टि, उपाय और सिफारिश भी है।</span>
+          </p>
+        </div>
+        <div class="pillar reveal" id="pillar-4">
+          <span class="pillar-num">04</span>
+          <h3>
+            <span class="en">Result-Oriented</span><span class="hi">परिणामोन्मुखी</span>
+          </h3>
+          <p>
+            <span class="en">Our measure of success is your transformation — in clarity, in timing, and in the tangible outcomes of your decisions.</span>
+            <span class="hi">हमारी सफलता का पैमाना आपका परिवर्तन है - स्पष्टता में, समय में, और आपके निर्णयों के ठोस परिणामों में।</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS TIMELINE -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">
+          <span class="en">How It Works</span><span class="hi">यह कैसे काम करता है</span>
+        </p>
+        <h2 class="section-title">
+          <span class="en">A Refined Process.<br />A Transformed Life.</span>
+          <span class="hi">एक परिष्कृत प्रक्रिया।<br />एक परिवर्तित जीवन।</span>
+        </h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal" id="step-1">
+          <div class="timeline-step">
+            <span class="step-num">01</span>
+            <div class="step-line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3>
+              <span class="en">Book Your Session</span><span class="hi">अपना सत्र बुक करें</span>
+            </h3>
+            <p>
+              <span class="en">Select the consultation type that aligns with your current life chapter. Every session is private, confidential, and deeply personal.</span>
+              <span class="hi">उस परामर्श प्रकार का चयन करें जो आपके वर्तमान जीवन अध्याय के साथ संरेखित हो। हर सत्र निजी, गोपनीय और गहराई से व्यक्तिगत है।</span>
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" id="step-2">
+          <div class="timeline-step">
+            <span class="step-num">02</span>
+            <div class="step-line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3>
+              <span class="en">Share Birth Details</span><span class="hi">जन्म विवरण साझा करें</span>
+            </h3>
+            <p>
+              <span class="en">Provide your birth date, time, and place. These are the coordinates from which the cosmos speaks your destiny.</span>
+              <span class="hi">अपनी जन्म तिथि, समय और स्थान प्रदान करें। ये वे निर्देशांक हैं जिनसे ब्रह्मांड आपकी नियति बोलता है।</span>
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" id="step-3">
+          <div class="timeline-step">
+            <span class="step-num">03</span>
+            <div class="step-line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3>
+              <span class="en">Deep Chart Analysis</span><span class="hi">गहन चार्ट विश्लेषण</span>
+            </h3>
+            <p>
+              <span class="en">Mr. Sharma conducts a rigorous, multi-layered Vedic analysis — Lagna, Navamsa, Dasha cycles, and planetary transits — before your consultation.</span>
+              <span class="hi">श्री शर्मा आपके परामर्श से पहले एक कठोर, बहु-स्तरीय वैदिक विश्लेषण - लग्न, नवमांश, दशा चक्र और ग्रहों के गोचर - का संचालन करते हैं।</span>
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" id="step-4">
+          <div class="timeline-step">
+            <span class="step-num">04</span>
+            <div class="step-line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3>
+              <span class="en">Private Consultation</span><span class="hi">निजी परामर्श</span>
+            </h3>
+            <p>
+              <span class="en">A focused, unhurried session — online or in-person — where insights are shared with clarity, warmth, and total honesty.</span>
+              <span class="hi">एक केंद्रित, बिना जल्दबाजी वाला सत्र - ऑनलाइन या व्यक्तिगत रूप से - जहां अंतर्दृष्टि स्पष्टता, गर्मजोशी और पूर्ण ईमानदारी के साथ साझा की जाती है।</span>
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item reveal" id="step-5">
+          <div class="timeline-step">
+            <span class="step-num">05</span>
+            <div class="step-line-none"></div>
+          </div>
+          <div class="timeline-content">
+            <h3>
+              <span class="en">Action Plan &amp; Remedies</span><span class="hi">कार्य योजना और उपाय</span>
+            </h3>
+            <p>
+              <span class="en">Walk away with a concrete roadmap: timing insights, karmic remedies, and strategic guidance tailored precisely to your chart.</span>
+              <span class="hi">एक ठोस रोडमैप के साथ चलें: आपके चार्ट के अनुसार समय की अंतर्दृष्टि, कर्म उपाय और रणनीतिक मार्गदर्शन।</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY QUOTE -->
+  <section class="philosophy" id="philosophy">
+    <div class="container">
+      <div class="philosophy-inner reveal">
+        <span class="philosophy-ornament">✦</span>
+        <blockquote class="philosophy-quote">
+          <span class="en">"Destiny is not merely predicted —<br /><em>it is aligned, elevated, and lived with intention.</em>"</span>
+          <span class="hi">"नियति की केवल भविष्यवाणी नहीं की जाती है -<br /><em>इसे संरेखित किया जाता है, उन्नत किया जाता है, और इरादे से जिया जाता है।</em>"</span>
+        </blockquote>
+        <cite class="philosophy-cite">
+          <span class="en">— Subhash Sharma, Founder · Astro Varenyam</span>
+          <span class="hi">— सुभाष शर्मा, संस्थापक · एस्ट्रो वरेण्यम</span>
+        </cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">
+          <span class="en">Aesthetic</span><span class="hi">सौंदर्य</span>
+        </p>
+        <h2 class="section-title">
+          <span class="en">Glimpses of<br />Astro Varenyam</span>
+          <span class="hi">एस्ट्रो वरेण्यम<br />की झलक</span>
+        </h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal">
+          <img src="assets/IMG-20250827-WA0001.jpg" alt="Vedic Astrology Consultation Room" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal" style="transition-delay: 0.1s;">
+          <img src="assets/IMG-20250827-WA0005.jpg" alt="Ancient Vedic Astrology Manuscripts" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal" style="transition-delay: 0.2s;">
+          <img src="assets/IMG-20250827-WA0010.jpg" alt="Celestial Alignment Chart" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal">
+          <img src="assets/IMG-20250827-WA0008.jpg" alt="Astrological Birth Chart Analysis" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal" style="transition-delay: 0.1s;">
+          <img src="assets/IMG-20250827-WA0007.jpg" alt="Spiritual Guidance Session" loading="lazy" />
+        </div>
+        <div class="gallery-item reveal" style="transition-delay: 0.2s;">
+          <img src="assets/IMG-20250827-WA0012.jpg" alt="Planetary Influence Diagram" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">
+          <span class="en">Client Experience</span><span class="hi">ग्राहक अनुभव</span>
+        </p>
+        <h2 class="section-title">
+          <span class="en">Trusted. Proven.<br />Transformative.</span>
+          <span class="hi">विश्वसनीय। प्रमाणित।<br />परिवर्तनकारी।</span>
+        </h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal" id="testi-1">
+          <div class="testi-stars">✦ ✦ ✦ ✦ ✦</div>
+          <p class="testi-text">
+            <span class="en">"The precision of Mr. Sharma's reading was unlike anything I had experienced. He identified a career pivot window six months before it happened — exactly as he described. I make no major business decision without his counsel."</span>
+            <span class="hi">"श्री शर्मा के पाठन की सटीकता मेरे अनुभव से बिल्कुल अलग थी। उन्होंने मेरे करियर के एक बदलाव के बारे में छह महीने पहले ही बता दिया था - बिल्कुल वैसा ही जैसा उन्होंने वर्णन किया था। मैं उनके परामर्श के बिना कोई बड़ा व्यावसायिक निर्णय नहीं लेता।"</span>
+          </p>
+          <div class="testi-author">
+            <span class="testi-name">
+              <span class="en">Vikram Reddy</span><span class="hi">विक्रम रेड्डी</span>
+            </span>
+            <span class="testi-title">
+              <span class="en">Entrepreneur, Pune</span><span class="hi">उद्यमी, पुणे</span>
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" id="testi-2">
+          <div class="testi-stars">✦ ✦ ✦ ✦ ✦</div>
+          <p class="testi-text">
+            <span class="en">"I came to him with doubts about a significant relationship. He didn't tell me what I wanted to hear — he told me what was true. That honesty, combined with his depth, gave me a clarity I hadn't felt in years."</span>
+            <span class="hi">"मैं एक महत्वपूर्ण रिश्ते के बारे में संदेह के साथ उनके पास आई थी। उन्होंने मुझे वह नहीं बताया जो मैं सुनना चाहती थी - उन्होंने मुझे सच बताया। उस ईमानदारी ने उनकी गहराई के साथ मुझे वह स्पष्टता दी जो मैंने वर्षों में महसूस नहीं की थी।"</span>
+          </p>
+          <div class="testi-author">
+            <span class="testi-name">
+              <span class="en">Priya Menon</span><span class="hi">प्रिया मेनन</span>
+            </span>
+            <span class="testi-title">
+              <span class="en">Architect, Bengaluru</span><span class="hi">वास्तुकार, बेंगलुरु</span>
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" id="testi-3">
+          <div class="testi-stars">✦ ✦ ✦ ✦ ✦</div>
+          <p class="testi-text">
+            <span class="en">"Three years of consulting with Astro Varenyam. Every major milestone in my financial life — the launch, the investment, the exit — was timed with his guidance. The results speak for themselves."</span>
+            <span class="hi">"एस्ट्रो वरेण्यम के साथ तीन साल का परामर्श। मेरे वित्तीय जीवन का हर बड़ा मील का पत्थर - लॉन्च, निवेश, निकास - उनके मार्गदर्शन के अनुसार तय किया गया था। परिणाम खुद बोलते हैं।"</span>
+          </p>
+          <div class="testi-author">
+            <span class="testi-name">
+              <span class="en">Amit Sharma</span><span class="hi">अमित शर्मा</span>
+            </span>
+            <span class="testi-title">
+              <span class="en">Investment Professional, Mumbai</span><span class="hi">निवेश पेशेवर, मुंबई</span>
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" id="testi-4">
+          <div class="testi-stars">✦ ✦ ✦ ✦ ✦</div>
+          <p class="testi-text">
+            <span class="en">"His approach is profoundly intellectual yet deeply rooted in traditional wisdom. Instead of generic predictions, I received a strategic roadmap that aligned perfectly with my professional aspirations."</span>
+            <span class="hi">"उनका दृष्टिकोण गहन बौद्धिक है फिर भी पारंपरिक ज्ञान में गहराई से निहित है। सामान्य भविष्यवाणियों के बजाय, मुझे एक रणनीतिक रोडमैप मिला जो मेरी पेशेवर आकांक्षाओं के साथ पूरी तरह से मेल खाता है।"</span>
+          </p>
+          <div class="testi-author">
+            <span class="testi-name">
+              <span class="en">Neha Desai</span><span class="hi">नेहा देसाई</span>
+            </span>
+            <span class="testi-title">
+              <span class="en">Strategy Director, Delhi</span><span class="hi">रणनीति निदेशक, दिल्ली</span>
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" id="testi-5">
+          <div class="testi-stars">✦ ✦ ✦ ✦ ✦</div>
+          <p class="testi-text">
+            <span class="en">"What sets Astro Varenyam apart is the meticulous attention to detail. Mr. Sharma decoded complex astrological patterns into actionable insights that helped me navigate a critical transition period seamlessly."</span>
+            <span class="hi">"एस्ट्रो वरेण्यम को जो अलग करता है वह है विवरण पर सावधानीपूर्वक ध्यान। श्री शर्मा ने जटिल ज्योतिषीय पैटर्नों को कार्रवाई योग्य अंतर्दृष्टि में डिकोड किया जिसने मुझे एक महत्वपूर्ण संक्रमण अवधि को मूल रूप से नेविगेट करने में मदद की।"</span>
+          </p>
+          <div class="testi-author">
+            <span class="testi-name">
+              <span class="en">Rohan Kapoor</span><span class="hi">रोहन कपूर</span>
+            </span>
+            <span class="testi-title">
+              <span class="en">Tech Executive, Hyderabad</span><span class="hi">टेक एक्जीक्यूटिव, हैदराबाद</span>
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" id="testi-6">
+          <div class="testi-stars">✦ ✦ ✦ ✦ ✦</div>
+          <p class="testi-text">
+            <span class="en">"A highly sophisticated and refined experience. The consultation provided me with an unparalleled perspective on my life's trajectory. It was less of a reading and more of an executive briefing on my destiny."</span>
+            <span class="hi">"एक अत्यधिक परिष्कृत और विस्तृत अनुभव। परामर्श ने मुझे मेरे जीवन के प्रक्षेपवक्र पर एक अद्वितीय परिप्रेक्ष्य प्रदान किया। यह पाठन से कम और मेरी नियति पर एक कार्यकारी ब्रीफिंग अधिक था।"</span>
+          </p>
+          <div class="testi-author">
+            <span class="testi-name">
+              <span class="en">Anjali Iyer</span><span class="hi">अंजलि अय्यर</span>
+            </span>
+            <span class="testi-title">
+              <span class="en">Creative Director, Chennai</span><span class="hi">रचनात्मक निदेशक, चेन्नई</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-section" id="booking">
+    <div class="cta-bg"></div>
+    <div class="container cta-inner">
+      <div class="reveal">
+        <p class="section-eyebrow">
+          <span class="en">Begin Your Journey</span><span class="hi">अपनी यात्रा शुरू करें</span>
+        </p>
+        <h2 class="cta-headline">
+          <span class="en">Your alignment<br /><em>starts with one conversation.</em></span>
+          <span class="hi">आपका संरेखण<br /><em>एक बातचीत से शुरू होता है।</em></span>
+        </h2>
+        <p class="cta-sub">
+          <span class="en">Private consultations available online and in-person. Limited sessions per month.</span>
+          <span class="hi">निजी परामर्श ऑनलाइन और व्यक्तिगत रूप से उपलब्ध हैं। प्रति माह सीमित सत्र।</span>
+        </p>
+        <div class="cta-actions">
+          <a href="https://wa.me/919827162095?text=Hello,%20I%20would%20like%20to%20book%20a%20private%20consultation%20session%20with%20Astro%20Varenyam." class="btn-primary" id="cta-whatsapp" target="_blank" rel="noopener">
+            <span class="en">Book via WhatsApp</span><span class="hi">व्हाट्सएप के माध्यम से बुक करें</span>
+          </a>
+          <a href="mailto:astrovarenyam@gmail.com" class="btn-ghost" id="cta-email">
+            <span class="en">Send an Enquiry</span><span class="hi">एक पूछताछ भेजें</span>
+          </a>
+        </div>
+        <p class="cta-location">
+          <span class="en">Bilaspur, Chhattisgarh · India &nbsp;·&nbsp; Online sessions worldwide</span>
+          <span class="hi">बिलासपुर, छत्तीसगढ़ · भारत &nbsp;·&nbsp; दुनिया भर में ऑनलाइन सत्र</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <!-- Contact Section (Short Form) -->
+  <section id="contact-form" class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h2 class="section-title text-left">
+            <span class="en">Get in <span class="text-gold">Touch</span></span>
+            <span class="hi">संपर्क <span class="text-gold">करें</span></span>
+          </h2>
+          <p class="section-desc text-left">
+            <span class="en">Have a question or want to book a session? Fill out this quick form or visit our <a href="contact.html" class="text-gold">detailed consultation page</a>.</span>
+            <span class="hi">कोई प्रश्न है या सत्र बुक करना चाहते हैं? इस त्वरित फ़ॉर्म को भरें या हमारे <a href="contact.html" class="text-gold">विस्तृत परामर्श पृष्ठ</a> पर जाएँ।</span>
+          </p>
+        </div>
+        <div class="contact-form-container reveal">
+          <form action="https://formsubmit.co/hello@kachaam.com" method="POST" class="short-form">
+            <input type="hidden" name="_subject" value="New Quick Inquiry - Home Page">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://astro-website.vercel.app/success.html">
+            
+            <div class="form-group">
+              <input type="text" name="name" required placeholder="Your Name / आपका नाम">
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" required placeholder="WhatsApp Number / व्हाट्सएप नंबर">
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="3" placeholder="How can we help? / हम कैसे मदद कर सकते हैं?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="en">Send Message</span>
+              <span class="hi">संदेश भेजें</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="Astro Varenyam Logo" class="logo-img-footer" />
+        <p class="footer-tagline">
+          <span class="en">Where Destiny Meets Divine Precision</span>
+          <span class="hi">जहाँ भाग्य दिव्य सटीकता से मिलता है</span>
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html#services"><span class="en">Services</span><span class="hi">सेवाएँ</span></a>
+        <a href="index.html#founder"><span class="en">About</span><span class="hi">परिचय</span></a>
+        <a href="index.html#process"><span class="en">Process</span><span class="hi">प्रक्रिया</span></a>
+        <a href="index.html#testimonials"><span class="en">Testimonials</span><span class="hi">प्रशंसापत्र</span></a>
+        <a href="index.html#contact-form"><span class="en">Contact</span><span class="hi">संपर्क करें</span></a>
+      </nav>
+      <p class="footer-copy">
+        <span class="en">&copy; 2025 Astro Varenyam. All rights reserved.</span>
+        <span class="hi">&copy; 2025 एस्ट्रो वरेण्यम। सभी अधिकार सुरक्षित।</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919827162095?text=Hello,%20I%20would%20like%20to%20book%20a%20private%20consultation%20session%20with%20Astro%20Varenyam." 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Book via WhatsApp">
+    <div class="whatsapp-icon-box">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </div>
+    <div class="whatsapp-text-box">
+      <span class="en">Book Now</span>
+      <span class="hi">अभी बुक करें</span>
+    </div>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
