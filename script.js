@@ -217,30 +217,49 @@
   function type() {
     const currentPhrase = phrases[phraseIndex].text;
     
+    // Get visible text without HTML tags to count actual characters
+    const visibleTextOnly = currentPhrase.replace(/<[^>]*>/g, '');
+    const totalChars = Array.from(visibleTextOnly).length;
+    
     if (isDeleting) {
       charIndex--;
     } else {
       charIndex++;
     }
 
+    // Build visible HTML by walking through the phrase and counting non-tag characters
     let visibleHTML = '';
     let count = 0;
-    let inTag = false;
+    let i = 0;
+    const phraseChars = Array.from(currentPhrase);
     
-    for (let i = 0; i < currentPhrase.length; i++) {
-      if (currentPhrase[i] === '<') inTag = true;
-      visibleHTML += currentPhrase[i];
-      if (!inTag) count++;
-      if (currentPhrase[i] === '>') inTag = false;
-      
-      if (count >= charIndex && !inTag) break;
+    while (i < phraseChars.length) {
+      if (phraseChars[i] === '<') {
+        // Capture full tag
+        while (i < phraseChars.length && phraseChars[i] !== '>') {
+          visibleHTML += phraseChars[i];
+          i++;
+        }
+        if (i < phraseChars.length) {
+          visibleHTML += phraseChars[i]; // add '>'
+          i++;
+        }
+      } else {
+        if (count < charIndex) {
+          visibleHTML += phraseChars[i];
+          count++;
+          i++;
+        } else {
+          break;
+        }
+      }
     }
 
     typewriterEl.innerHTML = visibleHTML + cursor;
 
     let delta = isDeleting ? 30 : 70;
 
-    if (!isDeleting && charIndex === currentPhrase.replace(/<[^>]*>/g, '').length) {
+    if (!isDeleting && charIndex === totalChars) {
       isDeleting = true;
       delta = 3000; 
     } else if (isDeleting && charIndex === 0) {
@@ -253,5 +272,27 @@
   }
 
   if (typewriterEl) type();
+
+  /* ------------------------------------------
+     BACK TO TOP: 30% scroll threshold
+  ------------------------------------------ */
+  const backToTopBtn = document.getElementById('backToTop');
+  if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = window.scrollY;
+      const threshold = scrollHeight * 0.2;
+      
+      if (scrolled > threshold) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 
 })();
